@@ -4,6 +4,6 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://dmall-registry-server:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: true
