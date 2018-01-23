@@ -1,0 +1,16 @@
+server:
+  port: 8765
+
+zuul:
+  routes:
+    order-service: /api/order/**
+    product-service: /api/product/**
+    shipping-service: /api/shipping/**
+    inventory-service: /api/inventory/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://dmall-registry-server:8761/eureka/
+    
+
